@@ -1,0 +1,205 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    border-bottom: #e74c3c 3px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header .container h1 {
+    float: left;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.hero {
+    background: #3498db;
+    color: #ecf0f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px; /* For the fixed header */
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about, .services, .contact, .login {
+    background: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #2c3e50;
+    color: #ecf0f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Adjust margin to better center the form */
+}
+
+form label {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #e74c3c;
+}
+
+.login {
+    min-height: calc(100vh - 140px); /* Adjust height to better center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px; /* For the fixed header */
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header .container h1, header nav {
+        float: none;
+        margin: 0;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
