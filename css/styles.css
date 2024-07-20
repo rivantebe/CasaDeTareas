@@ -20,10 +20,10 @@ body {
 }
 
 header {
-    background: #2c3e50;
+    background: #3457D5; /* Azul oscuro */
     color: #ecf0f1;
     padding: 20px 0;
-    border-bottom: #e74c3c 3px solid;
+    border-bottom: #FF9800 3px solid; /* Naranja */
     position: fixed;
     width: 100%;
     top: 0;
@@ -61,7 +61,7 @@ header nav {
 }
 
 .hero {
-    background: #3498db;
+    background: #2196F3; /* Azul claro */
     color: #ecf0f1;
     height: 100vh;
     display: flex;
@@ -104,7 +104,8 @@ section h2 {
 }
 
 .services li {
-    background: #ecf0f1;
+    background: #4CAF50; /* Verde */
+    color: #ecf0f1;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -120,7 +121,7 @@ section h2 {
 
 .project-section {
     flex: 1 1 45%;
-    background: #ecf0f1;
+    background: #FFEB3B; /* Amarillo */
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -140,7 +141,7 @@ section h2 {
 footer {
     padding: 20px 0;
     text-align: center;
-    background: #2c3e50;
+    background: #6A1B9A; /* Púrpura */
     color: #ecf0f1;
     position: relative;
     bottom: 0;
@@ -170,12 +171,12 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #3498db;
+    border-color: #2196F3; /* Azul claro */
     outline: none;
 }
 
 form button {
-    background: #2c3e50;
+    background: #F44336; /* Rojo */
     color: #ecf0f1;
     border: none;
     cursor: pointer;
@@ -185,7 +186,7 @@ form button {
 }
 
 form button:hover {
-    background: #e74c3c;
+    background: #E91E63; /* Rosa */
 }
 
 .login {
@@ -200,3 +201,32 @@ form button:hover {
 @media (max-width: 768px) {
     header {
         text-align: center;
+    }
+
+    header .container h1, header nav {
+        float: none;
+        margin: 0;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
