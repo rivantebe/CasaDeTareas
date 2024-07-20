@@ -8,7 +8,7 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ecf0f1;
+    background-color: #FFE8C8; /* Beige */
     color: #2c3e50;
     margin: 0;
 }
@@ -20,10 +20,10 @@ body {
 }
 
 header {
-    background: #3457D5; /* Azul oscuro */
+    background: #FFA62F; /* Naranja oscuro */
     color: #ecf0f1;
     padding: 20px 0;
-    border-bottom: #FF9800 3px solid; /* Naranja */
+    border-bottom: #FFC96F 3px solid; /* Naranja claro */
     position: fixed;
     width: 100%;
     top: 0;
@@ -60,7 +60,7 @@ header nav {
     margin-top: 10px;
 }
 
-.header nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -76,7 +76,7 @@ header .menu-toggle {
 }
 
 .hero {
-    background: #2196F3; /* Azul claro */
+    background: #FFC96F; /* Naranja claro */
     color: #ecf0f1;
     height: 100vh;
     display: flex;
@@ -106,7 +106,7 @@ section h2 {
 }
 
 .about, .services, .contact, .project, .login {
-    background: #ecf0f1;
+    background: #FFE8C8; /* Beige */
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -119,8 +119,8 @@ section h2 {
 }
 
 .services li {
-    background: #4CAF50; /* Verde */
-    color: #ecf0f1;
+    background: #ACD793; /* Verde */
+    color: #2c3e50;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -136,7 +136,7 @@ section h2 {
 
 .project-section {
     flex: 1 1 45%;
-    background: #FFEB3B; /* Amarillo */
+    background: #FFC96F; /* Naranja claro */
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -156,7 +156,7 @@ section h2 {
 footer {
     padding: 20px 0;
     text-align: center;
-    background: #6A1B9A; /* Púrpura */
+    background: #FFA62F; /* Naranja oscuro */
     color: #ecf0f1;
     position: relative;
     bottom: 0;
@@ -186,13 +186,13 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #2196F3; /* Azul claro */
+    border-color: #FFA62F; /* Naranja oscuro */
     outline: none;
 }
 
 form button {
-    background: #F44336; /* Rojo */
-    color: #ecf0f1;
+    background: #ACD793; /* Verde */
+    color: #2c3e50;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -201,7 +201,7 @@ form button {
 }
 
 form button:hover {
-    background: #E91E63; /* Rosa */
+    background: #FFA62F; /* Naranja oscuro */
 }
 
 .login {
