@@ -90,7 +90,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.about, .services, .contact, .login {
+.about, .services, .contact, .project, .login {
     background: #ecf0f1;
     margin-bottom: 20px;
     padding: 20px;
@@ -109,6 +109,32 @@ section h2 {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #bdc3c7;
+}
+
+.project-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-section {
+    flex: 1 1 45%;
+    background: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+.project-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 footer {
@@ -174,32 +200,3 @@ form button:hover {
 @media (max-width: 768px) {
     header {
         text-align: center;
-    }
-
-    header .container h1, header nav {
-        float: none;
-        margin: 0;
-    }
-
-    header nav ul {
-        text-align: center;
-        padding: 0;
-    }
-
-    header li {
-        display: block;
-        padding: 10px 0;
-    }
-
-    .hero h2 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .container {
-        width: 90%;
-    }
-}
