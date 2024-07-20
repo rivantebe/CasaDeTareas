@@ -60,6 +60,21 @@ header nav {
     margin-top: 10px;
 }
 
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .menu-toggle {
+    display: none;
+    background: #ecf0f1;
+    border: none;
+    color: #2c3e50;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .hero {
     background: #2196F3; /* Azul claro */
     color: #ecf0f1;
@@ -199,8 +214,18 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
-    header {
+    header nav ul {
+        flex-direction: column;
+        display: none;
         text-align: center;
+    }
+
+    header nav ul.active {
+        display: block;
+    }
+
+    header .menu-toggle {
+        display: block;
     }
 
     header .container h1, header nav {

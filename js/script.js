@@ -1,2 +1,8 @@
-// Placeholder for future JavaScript code if needed
-console.log("Página del Colegio Inteligente cargada correctamente");
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+});
